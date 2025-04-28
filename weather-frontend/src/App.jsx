@@ -27,9 +27,9 @@ function App() {
 
   const fetchWeather = async (lat, lon) => {
     try {
-      let url = `http://localhost:5000/weather?city=${city}`;
+      let url = `https://sky-cast-ayw0.onrender.com/weather?city=${city}`;
       if (lat && lon) {
-        url = `http://localhost:5000/weather?lat=${lat}&lon=${lon}`;
+        url = `https://sky-cast-ayw0.onrender.com/weather?lat=${lat}&lon=${lon}`;
       }
       console.log("Fetching weather with URL:", url); // Debug log
       const res = await axios.get(url);
